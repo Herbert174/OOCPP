@@ -13,16 +13,22 @@ Cookie::Cookie() {
 	formato = "Redondo";
 }
 
+Cookie::Cookie(float preco) : preco(preco){
+	std::cout << "Cookie foi criado com preço definido! " << std::endl;
+	formato = "Redondo";
+}
+
+Cookie::Cookie(std::string sabor, float preco) : sabor(sabor), preco(preco) {
+	std::cout << "Cookie foi criado com sabor e preço definido! " << std::endl;
+	this->formato = "Boneco";
+}
+
 void Cookie::comer() {
 	std::cout << "Você comeu o seu cookie de " << sabor << std::endl;
 }
 
 void Cookie::avaliar(int nota) {
 	std::cout << "Você deu uma avaliação para o seu cookie de " << sabor << " de " << nota << std::endl;
-}
-
-float Cookie::getPreco() {
-	return preco;
 }
 
 void Cookie::pagar(float valor) {
@@ -37,6 +43,30 @@ void Cookie::pagar(float valor) {
 	else {
 		std::cout << "Pagamento realizado com sucesso! " << std::endl;
 	}
+}
+
+float Cookie::getPreco() {
+	return preco;
+}
+
+std::string Cookie::getSabor() {
+	return sabor;
+}
+
+std::string Cookie::getFormato() {
+	return formato;
+}
+
+void Cookie::setPreco(float preco) {
+	this->preco = preco;
+}
+
+void Cookie::setSabor(std::string sabor) {
+	this->sabor = sabor;
+}
+
+void Cookie::setFormato(std::string formato) {
+	this->formato = formato;
 }
 
 Funcionario::Funcionario(std::string nome, int idade, float salario) : nome(nome), idade(idade), salario(salario) {
