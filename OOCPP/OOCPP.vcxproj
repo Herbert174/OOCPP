@@ -139,13 +139,29 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Animal.cpp" />
+    <ClCompile Include="Cachorro.cpp" />
+    <ClCompile Include="Gato.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mamifero.cpp" />
     <ClCompile Include="Objetos.cpp" />
+    <ClCompile Include="Personagem.cpp" />
+    <ClCompile Include="Pessoa.cpp" />
+    <ClCompile Include="Professor.cpp" />
+    <ClCompile Include="Usuario.cpp" />
     <ClCompile Include="Utilitarios.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Animal.h" />
+    <ClInclude Include="Cachorro.h" />
+    <ClInclude Include="Gato.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="Mamifero.h" />
     <ClInclude Include="Objetos.h" />
+    <ClInclude Include="Personagem.h" />
+    <ClInclude Include="Pessoa.h" />
+    <ClInclude Include="Professor.h" />
+    <ClInclude Include="Usuario.h" />
     <ClInclude Include="Utilitarios.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
